@@ -2,8 +2,8 @@ import { SearchParams } from "@/app/search/page";
 import { Result } from "@/typing";
 
 export async function fetchResults(searchParams: SearchParams) {
-  const username = process.env.NEXT_PUBLIC_OXYLABS_USERNAME;
-  const password = process.env.NEXT_PUBLIC_OXYLABS_PASSWORD;
+  const username = process.env.OXYLABS_USERNAME;
+  const password = process.env.OXYLABS_PASSWORD;
 
   const url = new URL(searchParams.url);
   Object.keys(searchParams).forEach(key => {
